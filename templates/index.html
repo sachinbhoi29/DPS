@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block body %}
+
+<style>
+    /* Container holding the image and the text */
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    /* Bottom left text */
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+
+    /* Centered text */
+    .centered {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+    }
+
+    .btn {
+        background-color: #04395e;
+        color: #ffd51e;
+        border: 0px;
+    }
+
+    .btn:hover {
+        background-color: #36617E;
+        color: white;
+    }
+</style>
+
+
+<div class="container-fluid">
+    <img src="static/womens0.jpg" alt="womens0" style="width:100%;">
+    <div class="bottom-left">Bottom Left</div>
+
+    <div class="centered">
+        <h4>This is cardi-otters</h4> <a href="https://calendly.com/moderncardio/testing?month=2021-06" class="btn">Book
+            an Appointment</a>
+    </div>
+</div>
+{% endblock body %}
